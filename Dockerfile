@@ -2,8 +2,10 @@ FROM gitlab/gitlab-ce:10.5.2-ce.0
 
 MAINTAINER AJ, <a.sivayoganathan>
 
-# Copy in configuration files
+USER root
 
+# Copy in configuration files
+COPY resources/gitlab.rb /etc/gitlab/
 
 # Environment variables
 
