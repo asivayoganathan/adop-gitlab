@@ -9,4 +9,6 @@ COPY resources/gitlab.rb /etc/gitlab/
 
 # Environment variables
 
-RUN gitlab-ctl reconfigure && gitlab-ctl restart
+RUN gitlab-ctl restart
+
+# gitlab-ctl reconfigure && gitlab-ctl restart
