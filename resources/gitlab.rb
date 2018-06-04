@@ -201,7 +201,7 @@ gitlab_rails['ldap_enabled'] = true
 ###! **remember to close this block with 'EOS' below**
 gitlab_rails['ldap_servers'] = YAML.load <<-'EOS'
   main: # 'main' is the GitLab 'provider ID' of this LDAP server
-    label: 'LDAP'
+    label: #{ENV['LDAP_SERVER_NAME']}
     host: 'ldap'
     port: 389
     uid: 'uid'
