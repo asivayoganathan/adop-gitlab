@@ -989,7 +989,7 @@ EOS
 ##! Docs: https://docs.gitlab.com/omnibus/settings/configuration.html#disable-user-and-group-account-management
 ################################################################################
 
-# manage_accounts['enable'] = false
+manage_accounts['enable'] = false
 
 ################################################################################
 ## Storage directories
